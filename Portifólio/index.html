@@ -14,9 +14,9 @@
         <header>
             <!-- teg de cabesalho, logo,  adicionar botoes -->
 
-            <h1>DUVIVA a teg header pode ser usada nas section</h1>
+            <h1>DUVIVA A TEG HEARDER PODE SER USADA NAS SECTION</h1>
             <!-- Lighthouse é uma ferramenta de código aberto desenvolvida pelo Google que é usada para avaliar a qualidade geral de uma página da web ou aplicativo da web. Ele fornece uma variedade de métricas e insights sobre o desempenho, acessibilidade, práticas recomendadas de SEO. 
-            Para acesar é só inspecionar a pagina -->        
+            Para acesar é só iSnspecionar a pagina -->        
             <!-- Material referencia Stack Overflow -->
             
             <div>
@@ -24,18 +24,23 @@
                 <!-- logo -->
                 
                 <nav>
-                    <!-- são links iremos personalizar para parecer com um botão -->
-                    <a>Apresentação</a>
-                    <a>Skills</a>
-                    <a>Contato</a>                    
+                    <!-- dentro de cada tag a configurado a ancora com o href-->
+                    <a href="#apresentacao">Apresentação</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contato">Contato</a>                    
                 </nav>
             </div>
         </header>
         
         <main>
             <!-- contem o conteudo principal da pagina pode ser adicionado todo o conteudo ou só uma parte que seria a principal-->
-            <section title="Apresentação">                
-                <div>
+            <section title="Apresentação"> 
+                <!-- criando ancora para quando clicado nos botões desce a pagina para as areas desejada 
+                     criado dentro da div
+                     adicionado o id na primeria div para que o topo da pagina seja a tag exemplo As-->
+                <div id="apresentacao">
+                    <!-- nomes de clases e ids não vai acentos, espaço
+                         nomes compostos primeira palavra minuscula,proximas palavras a primeria letra maiuscula ou tudo minusculo e usar o anderlane -->
                     <div>
                         <!-- da para colocar foto, imagem, descrição, titulo -->
                     <h1>Tiago</h1>
@@ -48,7 +53,7 @@
             </section>
 
             <section title="Skills">
-                <div>
+                <div id="skills">
                     <!-- aqui criado uma bloco dentro da seção para o ccs no geral do bloco 
                          criar uma div para cada uma das skills -->
                     <h2>Skills</h2>
@@ -77,7 +82,7 @@
 
             <section title="Contato">
                 <!-- contato pode ser no rodaé neste caso sera formulario -->
-                <div>
+                <div id="contato">
                     <P>Preencha o formulario e entrarei em contato</P>
                     <div>
                         <form>
@@ -114,7 +119,9 @@
                 <a href="https://mail.yahoo.com/" target="_blank"><img src="img/yahoo.png"></a>
                 <!-- o mailton vai enviar um email para o email expecificado vai soliciar ao usuario qual app vai quere abrir para enviar -->
                 <a href="mailto:tiagotigames@gmail.com">tiagotigames@gmail.com</a>
-                <a href="https://wa.me/96649976?text=sua%20mensagem%20aqui">Enviar mensagem via WhatsApp</a>
+                
+                <a href="https://wa.me/96649976?text=sua%20mensagem%20aqui">Enviar mensagem via WhatsApp<img src="img/whatsapp.jpeg"></a>
+                <h1> VERIFICAR SE O WHATS ESTA INCREMENTADO DE MANEIRA CORRETA</h1>
             </div>
         </footer>
 
