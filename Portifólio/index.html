@@ -10,102 +10,113 @@
     </head>
     <body>
 
+        <!-- menu do cabeçalho header-->
         <header>
             <!-- teg de cabesalho, logo,  adicionar botoes -->
 
             <h1>DUVIVA a teg header pode ser usada nas section</h1>
-            <!-- Lighthouse é uma ferramenta de código aberto desenvolvida pelo Google que é usada para avaliar a 
-                qualidade geral de uma página da web ou aplicativo da web. Ele fornece uma variedade de métricas e 
-                insights sobre o desempenho, acessibilidade, práticas recomendadas de SEO 
-                Para acesar é só inspecionar a pagina -->        
+            <!-- Lighthouse é uma ferramenta de código aberto desenvolvida pelo Google que é usada para avaliar a qualidade geral de uma página da web ou aplicativo da web. Ele fornece uma variedade de métricas e insights sobre o desempenho, acessibilidade, práticas recomendadas de SEO. 
+            Para acesar é só inspecionar a pagina -->        
             <!-- Material referencia Stack Overflow -->
+            
+            <div>
+                <img src="img/logoeletrica.jpg">
+                <!-- logo -->
+                
+                <nav>
+                    <!-- são links iremos personalizar para parecer com um botão -->
+                    <a>Apresentação</a>
+                    <a>Skills</a>
+                    <a>Contato</a>                    
+                </nav>
+            </div>
         </header>
         
         <main>
             <!-- contem o conteudo principal da pagina pode ser adicionado todo o conteudo ou só uma parte que seria a principal-->
+            <section title="Apresentação">                
+                <div>
+                    <div>
+                        <!-- da para colocar foto, imagem, descrição, titulo -->
+                    <h1>Tiago</h1>
+                    <p>Aspecto crucial é a acessibilidade. Garanta que seu site seja acessível para todos, independentemente de deficiências físicas ou cognitivas, criando código HTML semântico e fornecendo alternativas para conteúdo não textual. Além disso, é importante otimizar seu site para os mecanismos de busca, escolhendo palavras-chave relevantes e implementando títulos e descrições de página informativos.                        
+                    </p>
+                    </div>
+                    <img src="img/logoeletrica.jpg">
+                    <!-- falta tag alt -->
+                </div>
+            </section>
 
+            <section title="Skills">
+                <div>
+                    <!-- aqui criado uma bloco dentro da seção para o ccs no geral do bloco 
+                         criar uma div para cada uma das skills -->
+                    <h2>Skills</h2>
+                    <div>
+                        <img src="img/logoeletrica.jpg">
+                        <h3>HTML</h3>
+                    </div>
+
+                    <div>
+                        <img src="img/logoeletrica.jpg">
+                        <h3>CSS</h3>
+                    </div>
+
+                    <div>
+                        <img src="img/logoeletrica.jpg">
+                        <h3>Java</h3>
+                    </div>
+
+                    <div>
+                        <img src="img/logoeletrica.jpg">
+                        <h3>Payton</h3>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section title="Contato">
+                <!-- contato pode ser no rodaé neste caso sera formulario -->
+                <div>
+                    <P>Preencha o formulario e entrarei em contato</P>
+                    <div>
+                        <form>
+                            <!-- para marcar que é formulario -->
+                            <label for="nome">Nome</label>
+                            <!-- for faz referencia ao input
+                                    recebe o dado tipo texto -->
+                            <input type="text" name="nome">
+
+                            <label for="email">Nome</label>                        
+                            <input type="email" name="email">
+
+                            <label for="numero">Nome</label>                        
+                            <input type="phone" name="numero">
+
+                            <button type="submit">Enviar</button>
+                        </form>
+
+                        
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>
             <!-- roda pé da pagina, contato e infotmaçoes adicionais sobre a pagina 
                  ultima coisa a ser carregado na pagina
                  deve ser colocado no final da pagina
-                 codigos pesados css por exemplo se quiser que caregue por ultimo da para colocar nesta tag -->
-
-        </footer>
-
-        <h1>Hello World h2</h1>
-
-        <h2>Hello World h2</h2>
-        <br>
-        <h3>Hello World h3</h3>
-        <h3>Hello World h3</h3>
-        <br>
-        <h4>Hello World h4</h4>
-        <h5>Hello World h5</h5>
-        <h6>Hello World h6</h6>
-
-        <br>
-        <p>Paragrafo para texto padrão</p>
-        
-        <span>Paragrafo para texto padrão editavel-configuravel (tag span)</span>
-        <br>    
-        
-        <img src="img/logoeletrica.jpg" alt="imagem de fio de cobre semi rigido criando arco elétrico, com fundo de nuvens escsuras">
-        
-        
-        <br>
-        <p>Paragrafo para texto padrão</p>
-        
-        <span>Paragrafo para texto padrão editavel-configuravel (tag span)</span>
-        
-        <img width="150px" height="150px" src="img/logoeletrica.jpg" alt="imagem de fio de cobre semi rigido criando arco elétrico, com fundo de nuvens escsuras">
-        <!-- width força a imagem a ficar no tamanho expecifico 
-             se usar só um o outro se adapta automatico (height) -->
-        
-        <buttoon>Botão</buttoon>
-        
-
-        
-        <a href="https://www.youtube.com/?hl=pt-br">Youtube</a>
-        <br>
-        <a href="https://www.youtube.com/" target="_blank">Youtube Guia nova</a>
-        <!-- da para usar css e deixar com cara de botão -->
-        
-
-        <!-- separar os conteudos criar blocos de codigos
-             codigos com comportamento diferentes-->
-        <section>
-            <p>Texto dentro da seção</p>
-            <p>Outro texto dentro da seção</p>
-
-
-        </section>
-        
-        <br>
-
-        <section title="Cabeçalho">s
-        <!-- dica usar abributo por exemplo title para diferenciar -->
+                 codigos pesados css por exemplo se quiser que caregue por ultimo da para colocar nesta tag
+                 logos de redes sociais -->
             <div>
-                <div>
-                    <button> Botão 1</button>
-                    <button> Botão 2</button>
-                        <!-- no google da para ver todas as caracteristicas do display Aula 2 (3:24)
-                             separar os botoes tras uma melhor acessibilidade para manipulação
-                             separa com div crinado blocos menores 
-                             assim da para criar configuraçoes individuais para cada bloco -->
-                </div>
-
-                <p>Texto dentro da seção</p>
-                <p>Outro texto dentro da seção</p>                
+                <!-- link 
+                      utilização do target para abrim em nova aba -->
+                <a href="https://mail.yahoo.com/" target="_blank"><img src="img/yahoo.png"></a>
+                <!-- o mailton vai enviar um email para o email expecificado vai soliciar ao usuario qual app vai quere abrir para enviar -->
+                <a href="mailto:tiagotigames@gmail.com">tiagotigames@gmail.com</a>
+                <a href="https://wa.me/96649976?text=sua%20mensagem%20aqui">Enviar mensagem via WhatsApp</a>
             </div>
-        
-        </section>
-
-        <section title="Titulo">
-            <h1>Ttulo</h1>
-            <img>
-        </section>
+        </footer>
 
         
     </body>
