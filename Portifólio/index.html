@@ -28,30 +28,14 @@
         <!-- imagem se -->
 
         <!-- para adicionar o icone fica ao lado do titulo quando abre a pagina 
-             para identificar o que que ele é rel o caminho -->
+             para identificar o que que ele é rel, o caminho eo tipo -->
         <link rel="icon" href="img/yahoo.png" type="image/x-icon">
         
-        <!-- tratar o css dentro da tag do HTML ou criando um arquivo css e adicionar todos 
-            nesse caso vams adicinar com a tag style 
-            elaborar tudo em unico arquivo ocasina peso o coreto sera separ o css -->
-        <style>
-        /* header .containerHeader{ }
-            para classe especifica nesse caso a primeiro filho de header*/
+        <!-- adicionando link: vai mostrar os link possiveis a serem adicionados
+             não esqueser se o style estiver em uma pasta colocar o caminho da pasta no href -->
         
-        /* div { }
-            vai alterar todas as div*/
-        
-        /* header div { }
-            altera as div do header*/
+        <link rel="stylesheet" href="style.css">
 
-        /* header > div { }
-            altera a primero filho da header*/
-
-        /* para todos as calsses com mesmo nome */
-        .containerHeader{
-
-        }
-        </style>
     </head>
     <body>
 
@@ -66,17 +50,19 @@
             
             <!-- criando classe usado como referencia tanto no javascript quanto no html para fezer alguma edição tanto visual ou edição de conteudo utilizando javascript
                  recomenda-se que tenham nomes relevantes ao site isso influencia no SEO, nos motores de busca -->           
-             <div class="containerHeader"> <!--cabeçalho-->
-                <img classe="logoSite" src="img/logoeletrica.jpg">
-                <!-- logo -->
-                
-                <nav class="conteinerBottons">
-                    <!-- dentro de cada tag a configurado a ancora com o href
-                         se for usar a mesma redenrização para os botões o nemoe pode ser o mesmo da classe-->
-                    <a class="buttonHeader" href="#apresentacao">Apresentação</a>
-                    <a class="buttonHeader" href="#skills">Skills</a>
-                    <a class="buttonHeader" href="#contato">Contato</a>                    
-                </nav>
+            <div class="backgroudHeaderColor"> <!-- criada para adicionar uma cor ao cabeçalho com css -->
+                <div class="containerHeader"> <!-- cabeçalho -->
+                    <img class="logoSite" src="img/logo-escola.png">
+                    <!-- logo -->
+                    
+                    <nav class="containerBottons">
+                        <!-- dentro de cada tag a configurado a ancora com o href
+                             se for usar a mesma redenrização para os botões o nemoe pode ser o mesmo da classe-->
+                        <a class="buttonHeader" href="#apresentacao">Apresentação</a>
+                        <a class="buttonHeader" href="#skills">Skills</a>
+                        <a class="buttonHeader" href="#contato">Contato</a>                    
+                    </nav>
+                </div>
             </div>
         </header>
         

@@ -1,0 +1,47 @@
+/* a cor pode ser colocado direto na :root{} da pagina
+   ou no body
+   a ordem de carregamento é de cima para baixo cuidado na hora de reutilizar em diferentes lugares as cores por exemplo */
+:root{
+   /* recomenda-se criar variaveis das cores
+      quando utilizada varias vezes as cores a pagina tem que calcular todas as vezes que tiver a cor definida
+      com a variavel por mais que tenha utilizado mais de uma vez as cores JA ESTARAM DEFINIDAS E SALVAS
+      DUVIDA AS CORES ESTARAM CARREGADAS JA NO INICIO
+      
+      . ponto clase
+        sem nada tag
+      : root
+      # ids */
+
+      --black-300: #212121;
+
+      --purple-300: #8733FF;
+}
+
+body{
+   /* da para colocar cor em especifico, rgb ou exadecimal*/
+   /* background-color: #212121; alterado para utilizar varialvel*/
+   background-color: var(--black-300);
+}
+
+/* adicionando cores ao cabeçalho no momento não vai ser na header*/
+.backgroudHeaderColor{
+   background-color: var(--purple-300);
+}
+
+.containerHeader{
+   display: flex;
+   align-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+}
+
+.logoSite{     
+   /* logo pode ser só o desenho unico ou nome da empresa
+      o desenho unico é o simplificado
+      neste caso vai ser médio para pequene é porque é simplificado não precisa ser responsiva normalmete logo não se altera*/
+   /* largura e altura*/
+   width: 150px;   
+   height: 150px;
+}
