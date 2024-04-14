@@ -6,31 +6,52 @@
         <meta charset="utf-8"/>
         <!-- essa tag meta define o comportamento em diferentes telas tamanhos parte basica de responsividade do html 
              content é o comando a ser usado compativel com a largura da tela do dispositivo em uma escala 1:1 -->
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-             <title> Portifólio Demonstrativo</title>
-             
-             <!-- tratar o css dentro da tag do HTML ou criando um arquivo css e adicionar todos 
-                  nesse caso vams adicinar com a tag style 
-                  elaborar tudo em unico arquivo ocasina peso o coreto sera separ o css -->
-             <style>
-                /* header .containerHeader{ }
-                    para classe especifica nesse caso a primeiro filho de header*/
-                
-                /* div { }
-                   vai alterar todas as div*/
-                
-                /* header div { }
-                   altera as div do header*/
+        <!-- são informaçoes para ranquear o site -->
+        <!-- descrição da pagina, é o texto o qual quando realizamos uma pesquisa no google por exemplo tem o titulo e abaixo um texto que é a descrição-->
+        <meta name="descripion" content="Descrição da pagina que estou criando">
 
-                /* header > div { }
-                   altera a primero filho da header*/
+        <!-- palavras chaves, são palavras que quando pesquisadas podem direcinar para o site
+             não a numero de palavras mas tomar cuidado com a quantia parea não colocar de mais em virtude do pesso da pagina
+             são key sensitive-->
+        <meta name="keywords" content="portifólio, site proficional, curriculo, especializado, ESPECIALIZADO">
 
-                /* para todos as calsses com mesmo nome */
-                .containerHeader{
+        <!-- autor da pagina -->
+        <meta name="author" content="TiagoSSP">
+        
+        <!-- códigos de rastreio do google adicionar antes do css -->
 
-                }
-             </style>
+        <!-- o titulo e o icone tem local definido só estamos avisando que a pagina tem e qual é -->
+        <title> Portifólio Demonstrativo</title>
+
+        <!-- imagem se -->
+
+        <!-- para adicionar o icone fica ao lado do titulo quando abre a pagina 
+             para identificar o que que ele é rel o caminho -->
+        <link rel="icon" href="img/yahoo.png" type="image/x-icon">
+        
+        <!-- tratar o css dentro da tag do HTML ou criando um arquivo css e adicionar todos 
+            nesse caso vams adicinar com a tag style 
+            elaborar tudo em unico arquivo ocasina peso o coreto sera separ o css -->
+        <style>
+        /* header .containerHeader{ }
+            para classe especifica nesse caso a primeiro filho de header*/
+        
+        /* div { }
+            vai alterar todas as div*/
+        
+        /* header div { }
+            altera as div do header*/
+
+        /* header > div { }
+            altera a primero filho da header*/
+
+        /* para todos as calsses com mesmo nome */
+        .containerHeader{
+
+        }
+        </style>
     </head>
     <body>
 
@@ -114,10 +135,10 @@
                     <P>Preencha o formulario e entrarei em contato</P>
                     <div>
                         <form>
-                            <!-- para marcar que é formulario -->
+                            <!-- form para marcar que é formulario -->
                             <label for="nome">Nome</label>
                             <!-- for faz referencia ao input
-                                    recebe o dado tipo texto -->
+                                 recebe o dado tipo texto -->
                             <input type="text" name="nome">
 
                             <label for="email">Nome</label>                        
