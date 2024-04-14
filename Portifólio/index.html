@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     
+    <!-- dentro do head carrega tudo que é estremamente nescesario sera caregado nesta teg -->
     <head>
         <meta charset="utf-8"/>
+        <!-- essa tag meta define o comportamento em diferentes telas tamanhos parte basica de responsividade do html 
+             content é o comando a ser usado compativel com a largura da tela do dispositivo em uma escala 1:1 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
         
              <title> Portifólio Demonstrativo</title>
              
+             <!-- tratar o css dentro da tag do HTML ou criando um arquivo css e adicionar todos 
+                  nesse caso vams adicinar com a tag style 
+                  elaborar tudo em unico arquivo ocasina peso o coreto sera separ o css -->
+             <style>
+                /* header .containerHeader{ }
+                    para classe especifica nesse caso a primeiro filho de header*/
+                
+                /* div { }
+                   vai alterar todas as div*/
+                
+                /* header div { }
+                   altera as div do header*/
 
+                /* header > div { }
+                   altera a primero filho da header*/
+
+                /* para todos as calsses com mesmo nome */
+                .containerHeader{
+
+                }
+             </style>
     </head>
     <body>
 
@@ -19,15 +43,18 @@
             Para acesar é só iSnspecionar a pagina -->        
             <!-- Material referencia Stack Overflow -->
             
-            <div>
-                <img src="img/logoeletrica.jpg">
+            <!-- criando classe usado como referencia tanto no javascript quanto no html para fezer alguma edição tanto visual ou edição de conteudo utilizando javascript
+                 recomenda-se que tenham nomes relevantes ao site isso influencia no SEO, nos motores de busca -->           
+             <div class="containerHeader"> <!--cabeçalho-->
+                <img classe="logoSite" src="img/logoeletrica.jpg">
                 <!-- logo -->
                 
-                <nav>
-                    <!-- dentro de cada tag a configurado a ancora com o href-->
-                    <a href="#apresentacao">Apresentação</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contato">Contato</a>                    
+                <nav class="conteinerBottons">
+                    <!-- dentro de cada tag a configurado a ancora com o href
+                         se for usar a mesma redenrização para os botões o nemoe pode ser o mesmo da classe-->
+                    <a class="buttonHeader" href="#apresentacao">Apresentação</a>
+                    <a class="buttonHeader" href="#skills">Skills</a>
+                    <a class="buttonHeader" href="#contato">Contato</a>                    
                 </nav>
             </div>
         </header>
@@ -37,10 +64,11 @@
             <section title="Apresentação"> 
                 <!-- criando ancora para quando clicado nos botões desce a pagina para as areas desejada 
                      criado dentro da div
-                     adicionado o id na primeria div para que o topo da pagina seja a tag exemplo As-->
+                     adicionado o id na primeria div para que o topo da pagina seja a tag exemplo Apresentação-->
                 <div id="apresentacao">
                     <!-- nomes de clases e ids não vai acentos, espaço
-                         nomes compostos primeira palavra minuscula,proximas palavras a primeria letra maiuscula ou tudo minusculo e usar o anderlane -->
+                         nomes compostos primeira palavra minuscula,proximas palavras a primeria letra maiuscula ou tudo minusculo e usar o anderlane 
+                         recomenda-se que tenham nomes relevantes ao site isso influencia no SEO, nos motores de busca -->
                     <div>
                         <!-- da para colocar foto, imagem, descrição, titulo -->
                     <h1>Tiago</h1>
@@ -99,9 +127,7 @@
                             <input type="phone" name="numero">
 
                             <button type="submit">Enviar</button>
-                        </form>
-
-                        
+                        </form>                        
                     </div>
                 </div>
             </section>
