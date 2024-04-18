@@ -1,33 +1,53 @@
 /* a cor pode ser colocado direto na :root{} da pagina
    ou no body
-   a ordem de carregamento é de cima para baixo cuidado na hora de reutilizar em diferentes lugares as cores por exemplo */
+   a ordem de carregamento é de cima para baixo estilo cascata cuidado na hora de reutilizar em diferentes lugares as cores por exemplo */
 :root{
    /* recomenda-se criar variaveis das cores
-      quando utilizada varias vezes as cores a pagina tem que calcular todas as vezes que tiver a cor definida
+      quando utilizada varias vezes as cores a código tem que calcular todas as vezes que tiver a cor definida
       com a variavel por mais que tenha utilizado mais de uma vez as cores JA ESTARAM DEFINIDAS E SALVAS
-      DUVIDA AS CORES ESTARAM CARREGADAS JA NO INICIO
       
-      . ponto clase
-        sem nada tag
-      : root
-      # ids */
+      
+      . (ponto) clase
+        (sem nada) tag
+      : (dois pontos) root
+      # (hashtag) ids
 
+      */
+      
+      /* as cores são compostas por 6 digitos se colocar as 3 primeriras iguais detecta que é a mesma cor --white-300: #FFF */
+
+      --white-300: #FFFFFF; 
+      
       --black-300: #212121;
 
+
+      --purple-200: #A369FF;
       --purple-300: #8733FF;
+      --purple-500: #5A13B4;     
 }
+
 
 body{
    /* da para colocar cor em especifico, rgb ou exadecimal*/
    /* background-color: #212121; alterado para utilizar varialvel*/
    background-color: var(--black-300);
+   margin: auto; /* coloquei (auto) para ficar como se fose barra sem fim adicionei margem section skils*/
 }
+
+/* para replicar em todas as tag aa fonte e colocar depois do body não é regra mas pode causar distorções
+*{
+   font-family: "Montserrat", sans-serif;
+} */
+
+/* aula 5 2:09:29 */
+
 
 /* adicionando cores ao cabeçalho no momento não vai ser na header*/
 .backgroudHeaderColor{
    background-color: var(--purple-300);
 }
 
+/* foi visualizado no google para ver como fica e copiado para ca */
 .containerHeader{
    display: flex;
    align-content: center;
@@ -44,4 +64,54 @@ body{
    /* largura e altura*/
    width: 150px;   
    height: 150px;
+}
+
+/* aula 5 personalizando os botoes no html são utilizados links para ficar com cara de botão são personalizados aqui*/
+.buttonHeader{
+   background-color: var(--purple-500);
+   color: var(--white-300); /* cor da letra */
+   padding: 10px 15px; /* preenchimento */
+   text-decoration: none; /* (nome) removendo a decoracao da fonte */
+   font-weight: bold; /* peso da fonte (negrito) */
+   font-size: 1.2rem; /* 1 (rem) equivale a 16px, "rem" equivale a fonte padrão do navegador */
+                      /* é utilizado para que se a configuração da fonte do navegador for aumentada fica acessivel a quem tem baixa visão e a fonte se adpite automaticamete*/
+   border-radius: 15px; /* arendondamento das bordas */
+   margin: 0 10px; /* altera os dois lados left right*/
+   transition: background-color 0.5s ease; /* suavizar a trasição de cor */
+}
+
+/* aula 5 adicionando comportamento quando o mause estiver encima da classe aqui é os botões do cabeçalho (links) chama a clase e adiciona :hover */
+.buttonHeader:hover{
+   background-color: var(--purple-200);
+   transition: background-color 0.5s ease; /* (ease) curva de animação olhar no ispetor do crhome qual fica melhor */
+}
+
+/* aual 5  #apresentacao: nth-child(filho) - filho 1, 2, qual filho deseja alterar*/
+#apresentacao {
+   display: flex;
+   flex-direction: row;
+   align-content: stretch;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 10% 15%;
+   gap: 15px /* cria espaço entre objetos */
+}
+
+/* aual 5 não foi utilizado classe, utilizado herança */
+#apresentacao > div {
+   width: 750px;
+}
+
+/* aula 5 */
+#apresentacao h1 {
+   font-size: 2.5rem;
+   color: var(--white-300);
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+/* aula 5 */
+#apresentacao p {
+   font-size: 1.4rem;
+   color: var(--white-300);
 }

@@ -3,10 +3,15 @@
     
     <!-- dentro do head carrega tudo que é estremamente nescesario sera caregado nesta teg -->
     <head>
+        <!-- aula 5 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- aula 5 -->
+
         <meta charset="utf-8"/>
         <!-- essa tag meta define o comportamento em diferentes telas tamanhos parte basica de responsividade do html 
              content é o comando a ser usado compativel com a largura da tela do dispositivo em uma escala 1:1 -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
         
         <!-- são informaçoes para ranquear o site -->
         <!-- descrição da pagina, é o texto o qual quando realizamos uma pesquisa no google por exemplo tem o titulo e abaixo um texto que é a descrição-->
@@ -24,13 +29,15 @@
 
         <!-- o titulo e o icone tem local definido só estamos avisando que a pagina tem e qual é -->
         <title> Portifólio Demonstrativo</title>
-
-        <!-- imagem se -->
-
+        
         <!-- para adicionar o icone fica ao lado do titulo quando abre a pagina 
              para identificar o que que ele é rel, o caminho eo tipo -->
         <link rel="icon" href="img/yahoo.png" type="image/x-icon">
-        
+
+        <!-- aula 5 colocar antes do style tem que carregar antes -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- aula 5 -->
+
         <!-- adicionando link: vai mostrar os link possiveis a serem adicionados
              não esqueser se o style estiver em uma pasta colocar o caminho da pasta no href -->
         
@@ -44,20 +51,23 @@
             <!-- teg de cabesalho, logo,  adicionar botoes -->
 
             <h1>DUVIVA A TEG HEARDER PODE SER USADA NAS SECTION</h1>
+            <h1>QUANDO REDUZ A TELA OS BOTOES SE AGLOMERAM TUDO</h1>
             <!-- Lighthouse é uma ferramenta de código aberto desenvolvida pelo Google que é usada para avaliar a qualidade geral de uma página da web ou aplicativo da web. Ele fornece uma variedade de métricas e insights sobre o desempenho, acessibilidade, práticas recomendadas de SEO. 
             Para acesar é só iSnspecionar a pagina -->        
             <!-- Material referencia Stack Overflow -->
             
             <!-- criando classe usado como referencia tanto no javascript quanto no html para fezer alguma edição tanto visual ou edição de conteudo utilizando javascript
                  recomenda-se que tenham nomes relevantes ao site isso influencia no SEO, nos motores de busca -->           
-            <div class="backgroudHeaderColor"> <!-- criada para adicionar uma cor ao cabeçalho com css -->
+            <div class="backgroudHeaderColor"> <!-- criada para adicionar uma cor ao cabeçalho com CSS olhar CSS -->
                 <div class="containerHeader"> <!-- cabeçalho -->
                     <img class="logoSite" src="img/logo-escola.png">
                     <!-- logo -->
                     
                     <nav class="containerBottons">
                         <!-- dentro de cada tag a configurado a ancora com o href
-                             se for usar a mesma redenrização para os botões o nemoe pode ser o mesmo da classe-->
+                             se for usar a mesma redenrização para os botões o nome pode ser o mesmo da classe -->
+                             <!-- AULA 5 para personalizar os botões (links) no CSS usado classe buttonHeader olhar CSS 
+                                  SE REDUZIR DE MAIS A PAGINA OS BOTOES SE AGLOMERAM TUDO COLOCAR MARGIN SUPERIOR -->
                         <a class="buttonHeader" href="#apresentacao">Apresentação</a>
                         <a class="buttonHeader" href="#skills">Skills</a>
                         <a class="buttonHeader" href="#contato">Contato</a>                    
@@ -71,18 +81,20 @@
             <section title="Apresentação"> 
                 <!-- criando ancora para quando clicado nos botões desce a pagina para as areas desejada 
                      criado dentro da div
-                     adicionado o id na primeria div para que o topo da pagina seja a tag exemplo Apresentação-->
+                     adicionado o id na primeria div para que o topo da pagina seja a tag exemplo Apresentação -->
+                     <!-- aula 5  -->
                 <div id="apresentacao">
                     <!-- nomes de clases e ids não vai acentos, espaço
                          nomes compostos primeira palavra minuscula,proximas palavras a primeria letra maiuscula ou tudo minusculo e usar o anderlane 
                          recomenda-se que tenham nomes relevantes ao site isso influencia no SEO, nos motores de busca -->
                     <div>
                         <!-- da para colocar foto, imagem, descrição, titulo -->
-                    <h1>Tiago</h1>
-                    <p>Aspecto crucial é a acessibilidade. Garanta que seu site seja acessível para todos, independentemente de deficiências físicas ou cognitivas, criando código HTML semântico e fornecendo alternativas para conteúdo não textual. Além disso, é importante otimizar seu site para os mecanismos de busca, escolhendo palavras-chave relevantes e implementando títulos e descrições de página informativos.                        
-                    </p>
+                        <h1>Tiago</h1>
+                        <p>Aspecto crucial é a acessibilidade. Garanta que seu site seja acessível para todos, independentemente de deficiências físicas ou cognitivas, criando código HTML semântico e fornecendo alternativas para conteúdo não textual. Além disso, é importante otimizar seu site para os mecanismos de busca, escolhendo palavras-chave relevantes e implementando títulos e descrições de página informativos.</p>
                     </div>
-                    <img src="img/logoeletrica.jpg">
+                    <!-- aula 5 tamanho definido como padrao 500 
+                         SEO pede para que tamanho da imagem seja pré definido se for (class) o SEO não detecta -->
+                    <img width="500px" src="img/logoeletrica.jpg">
                     <!-- falta tag alt -->
                 </div>
             </section>
