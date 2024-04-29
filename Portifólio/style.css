@@ -170,7 +170,7 @@ body{
    margin: 0 25px; 
    padding: 35px 0; /* cria espaco dentro de um elemento na parte superior*/
    min-height: 250px; /* cria espaco dentro de um elemento na parte inferior*/
-   gap: 30px
+   gap: 30px /* cria espaço entre objetos */
 }
 
 .formularioContato input{
@@ -230,7 +230,7 @@ footer a{
    para as maiores pode se utilizar o padrão*/
    /* max largura */
 @media (max-width: 767px){   
-   .containerButtuns{
+   .containerButtons{
       display: flex;
       flex-direction: column;
    }
