@@ -1,32 +1,111 @@
 <!DOCTYPE html>
 
+<!-- usada para especificar o idioma principal do conteúdo de uma página da web -->
 <html lang="pt-BR">
     
+    <!-- dentro do head carrega tudo que é estremamente nescesario sera caregado nesta teg -->
     <head>
+        <!-- aula 5 -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- aula 5 -->
 
+
+        <!-- é usada para definir o conjunto de caracteres (character set). 
+             que será utilizado para interpretar e exibir o conteúdo de uma página da web.
+             charset="utf-8" especifica que o conjunto de caracteres UTF-8 será utilizado. UTF-8 é um padrão de codificação de caracteres 
+             que pode representar virtualmente todos os caracteres dos idiomas do mundo. Essa tag é especialmente importante para garantir
+             que o navegador exiba corretamente caracteres especiais, acentos e caracteres de idiomas não latinos em uma página da web. -->
         <meta charset="utf-8"/>
+        
+        <!-- essa tag meta define o comportamento em diferentes telas tamanhos parte basica de responsividade do html 
+             content é o comando a ser usado compativel com a largura da tela do dispositivo em uma escala 1:1 -->
         <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        
+        <!-- são informaçoes para ranquear o site -->
+        <!-- descrição da pagina, é o texto o qual quando realizamos uma pesquisa no google por exemplo tem o titulo e abaixo um texto que é a descrição-->
         <meta name="descripion" content="Descrição da pagina que estou criando">
+
+        <!-- palavras chaves, são palavras que quando pesquisadas podem direcinar para o site
+             não a numero de palavras mas tomar cuidado com a quantia parea não colocar de mais em virtude do pesso da pagina
+             são key sensitive-->
         <meta name="keywords" content="portifólio, site proficional, curriculo, especializado, ESPECIALIZADO">
+
+        <!-- autor da pagina -->
         <meta name="author" content="TiagoSSP">
+        
+        <!-- códigos de rastreio do google adicionar antes do css -->
 
+        <!-- o titulo e o icone tem local definido só estamos avisando que a pagina tem e qual é -->
         <title> Portifólio Demonstrativo</title>
-
+        
+        <!-- para adicionar o icone fica ao lado do titulo quando abre a pagina 
+             para identificar o que que ele é (rel) o caminho eo tipo -->
         <link rel="icon" href="img/yahoo.png" type="image/x-icon">
+
+        <!-- aula 5 colocar antes do style tem que carregar antes -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- aula 5 -->
+
+        <!-- adicionando link: vai mostrar os link possiveis a serem adicionados
+             não esqueser se o style estiver em uma pasta colocar o caminho da pasta no href -->        
+        
+        <!-- tratar o css dentro da tag do HTML ou criando um arquivo css e adicionar todos 
+             elaborar tudo em unico arquivo ocasina peso o correto sera separ o css -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- <style> -->
+            <!-- /* header .containerHeader{ }
+                para classe especifica nesse caso a primeiro filho de header*/
+            
+            /* div { }
+               vai alterar todas as div*/
+            
+            /* header div { }
+               altera as div do header*/
+
+            /* header > div { }
+               altera a primero filho da header*/
+
+            /* para todos as calsses com mesmo nome */
+            .containerHeader{
+
+            } -->
+         <!-- </style> -->
 
     </head>
     <body>
-        <header>           
-            <div class="backgroudHeaderColor">
-                <div class="containerHeader">                    
+
+        <!-- teg de cabesalho, logo,  adicionar botoes -->
+        <!-- menu do cabeçalho header-->
+        <header>
+                        
+            <!-- Lighthouse é uma ferramenta de código aberto desenvolvida pelo Google que é usada para avaliar a qualidade geral de uma página da web ou aplicativo da web. Ele fornece uma variedade de métricas e insights sobre o desempenho, acessibilidade, práticas recomendadas de SEO. 
+            Para acesar é só iSnspecionar a pagina -->        
+            <!-- Material referencia Stack Overflow -->
+            
+            <!-- criando classe usado como referencia tanto no javascript quanto no html para fezer alguma edição tanto visual ou edição de conteudo utilizando javascript
+                 recomenda-se que tenham nomes relevantes ao site isso influencia no SEO, nos motores de busca -->           
+            <div class="backgroudHeaderColor"> <!-- criada para adicionar uma cor ao cabeçalho com CSS olhar CSS -->
+                
+                <!-- criando classe usado como referencia tanto no javascript quanto no html para fezer alguma edição tanto visual ou edição de conteudo utilizando javascript
+                     recomenda-se que tenham nomes relevantes ao site isso influencia no SEO, nos motores de busca -->
+                <div class="containerHeader"> <!-- cabeçalho -->
+                    
+                    <!-- logo -->
+                    <!-- tag (alt) é a descrição da imagem serve para descrever a imagem na integra 
+                         ajuda a ranquear no google
+                         leitores de tela não conseguem ler imagem o leitor precisa da referencia da descriçãoda imagem por isso a importância -->                     
                     <img class="logoSite" src="img/logo-escola.png">                   
                     
                     <nav class="containerButtons">
-                        <a class="buttonHeader" href="#apresentacao">Apresentação</a>                        
+
+                        <!-- dentro de cada tag a configurado a ancora com o href
+                             se for usar a mesma redenrização para os botões o nome pode ser o mesmo da classe -->
+                        <!-- AULA 5 para personalizar os botões (links) no CSS usado classe buttonHeader olhar
+                             foi redenerizado -->
+                        <!-- tag link -->
+                        <a class="buttonHeader" href="#apresentacao">Apresentação</a>
                         <a class="buttonHeader" href="#skills">Skills</a>
                         <a class="buttonHeader" href="#contato">Contato</a>                    
                     </nav>
@@ -35,22 +114,62 @@
         </header>
         
         <main>
+            <!-- contem o conteudo principal da pagina pode ser adicionado todo o conteudo ou só uma parte que seria a principal-->
             <section title="Apresentação"> 
+                <!-- criando ancora para quando clicado nos botões desce a pagina para as areas desejada 
+                     criado dentro da div
+                     adicionado o id na primeria div para que o topo da pagina seja a tag exemplo Apresentação -->
+                     <!-- aula 5  -->
+                     <!-- aula 6 adicionado class -->
                 <div id="apresentacao" class="marginContainer">
+                    <!-- nomes de clases e ids não vai acentos, espaço
+                         nomes compostos primeira palavra minuscula,proximas palavras a primeria letra maiuscula ou tudo minusculo e usar o anderlane 
+                         recomenda-se que tenham nomes relevantes ao site isso influencia no SEO, nos motores de busca -->
                     <div>
+
+                        <!-- da para colocar foto, imagem, descrição, titulo -->
+                        <!-- utilizar uma por pagina PALAVRA CHAVE DA PAGINA h1 -->                        
                         <h1 class="tituloBloco">Tiago</h1>
+
+                        <!-- <h4>Hello World h4</h4>
+                             <h5>Hello World h5</h5>
+                             <h6>Hello World h6</h6> -->
+                        <!-- são costumizaveis
+                             pode colocar masi de um tambem -->
                         
+                        <!-- aual 6 adicionado nova classe paragrafo  -->
+                        <!-- paragrafo para texto padrão MAIS ESPECIFICAS PARA PARAGRAFO 
+                             pode criar texto de cores diferentes colocar dentro da span
+                             ocupa toda linha -->
                         <p class="paragrafo">Aspecto crucial é a acessibilidade. Garanta que seu site seja acessível para todos, independentemente de deficiências físicas ou cognitivas, criando código HTML semântico e fornecendo alternativas para conteúdo não textual. Além disso, é importante otimizar seu site para os mecanismos de busca, escolhendo palavras-chave relevantes e implementando títulos e descrições de página informativos.</p>
+
+                        <!-- paragrafo paras texto padrão
+                             para TEXTO EM GERAL
+                             TEXTO DIFERENTE DENTRO DO PARAGRAFO, paragrafo dentro da span
+                             ocupa o espaço do texto 
+                             se tiver imagem e cabar na largura fica ao lado span -->
+                        <!-- <span>Paragrafo para texto padrão editavel-configuravel (tag span)</span> -->
+        
                     </div>
-                    
+
+                    <!-- aula 5 tamanho definido como padrao 500 
+                         SEO pede para que tamanho da imagem seja pré definido se for (class) o SEO não detecta -->
                     <img width="500px" src="img/logoeletrica.jpg">
+                    <!-- falta tag alt -->
                 </div>
             </section>
 
             <section title="Skills">
+                
+                <!-- aula 6 adicionada class -->
                 <div id="skills" class="marginContainer">
+                    
+                    <!-- aqui criado uma bloco dentro da seção para o ccs no geral do bloco 
+                         criar uma div para cada uma das skills -->
                     <h2 class="tituloBloco">Skills</h2>
                         <div class="skillsContainer">    
+                            <!-- acrescentar a tag alt nas imagens -->
+                            <!-- aula 6 acrescentado class htmlColorBorder para cada skill -->
                             <div class="skill htmlColorBorder">
                                 <h3>HTML</h3>
                                 <img width="20px" src="img/logoeletrica.jpg">                                
@@ -70,21 +189,36 @@
                                 <h3>Payton</h3>
                                 <img width="20px"src="img/logoeletrica.jpg">                                
                             </div>
-                        </div> 
+                    </div> 
+                    
                 </div>
             </section>
 
             <section title="Contato">
+                <!-- contato pode ser no rodaé neste caso sera formulario -->
+                <!-- aula 6 adicionado class -->
                 <div id="contato" class="marginContainer">
                     <h2 class="tituloBloco">Contato</h2>
-                    
                     <P class="paragrafo">Preencha o formulario e entrarei em contato</P>
                     
+                    <!-- for faz referencia ao input
+                         recebe o dado tipo texto 
+                         form para marcar que é formulario -->
                     <form class="formularioContato">
+                       
+                        <!-- <label for="nome">Nome</label> retirado aula 6 para fazer texto encima da caixa -->
+                        <!-- aula 6 adicionado placeholder para o texto ficar dentro da caixa-->
                         <input type="text" name="nome" placeholder="Digite seu nome">
+
+                        <!-- <label for="email">Nome</label>                         -->
                         <input type="email" name="email" placeholder="Digite seu e-mail">
+
+                        <!-- <label for="numero">Nome</label>                         -->
                         <input type="phone" name="numero" placeholder="Digite seu telefone">
+
                         <textarea placeholder="Escreva seu assunto"></textarea>
+
+                        <!-- pode ser adicionado varios comportamentos neste botão -->
                         <button type="submit">Enviar</button>
                     </form> 
                 </div>
@@ -92,11 +226,27 @@
         </main>
 
         <footer>
+            <!-- roda pé da pagina, contato e infotmaçoes adicionais sobre a pagina 
+                 ultima coisa a ser carregado na pagina
+                 deve ser colocado no final da pagina
+                 codigos pesados css por exemplo se quiser que caregue por ultimo da para colocar nesta tag
+                 logos de redes sociais -->
             <div>
+                <!-- link 
+                      utilização do target para abrim em nova aba -->
                 <a href="https://mail.yahoo.com/" target="_blank"><img src="img/yahoo.png"></a>
-                <a href="mailto:tiagotigames@gmail.com">tiagotigames@gmail.com</a>                
+                <!-- o mailton vai enviar um email para o email expecificado vai soliciar ao usuario qual app vai quere abrir para enviar -->
+                <!-- COLOCAR UMA DIV PARA COLOCAR TEXTO EM CIMA ENVIE UM EMAIL PARA 
+                     NO LUGAR DO EMAIL SÓ ICONE -->
+                <a href="mailto:tiagotigames@gmail.com">tiagotigames@gmail.com</a>
+                
                 <a href="https://wa.me/96649976?text=sua%20mensagem%20aqui"><img src="img/whatsapp.jpeg" title="Envie um whatsapp"></a>
+                <!-- <h1> VERIFICAR SE O WHATS ESTA INCREMENTADO DE MANEIRA CORRETA</h1> -->
             </div>
         </footer>
+
+        <!-- AULA 6 2:36 -->
+        <!-- fonte mobile 14 e 16 -->
+        <!-- aws hospedagem -->
     </body>
 </html>
