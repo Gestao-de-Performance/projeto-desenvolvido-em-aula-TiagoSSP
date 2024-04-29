@@ -63,7 +63,7 @@
                     <img class="logoSite" src="img/logo-escola.png">
                     <!-- logo -->
                     
-                    <nav class="containerBottons">
+                    <nav class="containerButtons">
                         <!-- dentro de cada tag a configurado a ancora com o href
                              se for usar a mesma redenrização para os botões o nome pode ser o mesmo da classe -->
                              <!-- AULA 5 para personalizar os botões (links) no CSS usado classe buttonHeader olhar CSS 
@@ -83,14 +83,16 @@
                      criado dentro da div
                      adicionado o id na primeria div para que o topo da pagina seja a tag exemplo Apresentação -->
                      <!-- aula 5  -->
-                <div id="apresentacao">
+                     <!-- aula 6 adicionado class -->
+                <div id="apresentacao" class="marginContainer">
                     <!-- nomes de clases e ids não vai acentos, espaço
                          nomes compostos primeira palavra minuscula,proximas palavras a primeria letra maiuscula ou tudo minusculo e usar o anderlane 
                          recomenda-se que tenham nomes relevantes ao site isso influencia no SEO, nos motores de busca -->
                     <div>
                         <!-- da para colocar foto, imagem, descrição, titulo -->
-                        <h1>Tiago</h1>
-                        <p>Aspecto crucial é a acessibilidade. Garanta que seu site seja acessível para todos, independentemente de deficiências físicas ou cognitivas, criando código HTML semântico e fornecendo alternativas para conteúdo não textual. Além disso, é importante otimizar seu site para os mecanismos de busca, escolhendo palavras-chave relevantes e implementando títulos e descrições de página informativos.</p>
+                        <h1 class="tituloBloco">Tiago</h1>
+                        <!-- aual 6 adicionado nova classe para  -->
+                        <p class="paragrafo">Aspecto crucial é a acessibilidade. Garanta que seu site seja acessível para todos, independentemente de deficiências físicas ou cognitivas, criando código HTML semântico e fornecendo alternativas para conteúdo não textual. Além disso, é importante otimizar seu site para os mecanismos de busca, escolhendo palavras-chave relevantes e implementando títulos e descrições de página informativos.</p>
                     </div>
                     <!-- aula 5 tamanho definido como padrao 500 
                          SEO pede para que tamanho da imagem seja pré definido se for (class) o SEO não detecta -->
@@ -100,56 +102,64 @@
             </section>
 
             <section title="Skills">
-                <div id="skills">
+                <!-- aula 6 adicionada class -->
+                <div id="skills" class="marginContainer">
                     <!-- aqui criado uma bloco dentro da seção para o ccs no geral do bloco 
                          criar uma div para cada uma das skills -->
-                    <h2>Skills</h2>
-                    <div>
-                        <img src="img/logoeletrica.jpg">
-                        <h3>HTML</h3>
-                    </div>
+                    <h2 class="tituloBloco">Skills</h2>
+                        <div class="skillsContainer">    
+                            <!-- acrescentar a tag alt nas imagens -->
+                            <!-- aula 6 acrescentado class htmlColorBorder para cada skill -->
+                            <div class="skill htmlColorBorder">
+                                <h3>HTML</h3>
+                                <img width="20px" src="img/logoeletrica.jpg">                                
+                            </div>
 
-                    <div>
-                        <img src="img/logoeletrica.jpg">
-                        <h3>CSS</h3>
-                    </div>
+                            <div class="skill cssColorBorder">
+                                <h3>CSS</h3>
+                                <img width="20px" src="img/logoeletrica.jpg">                               
+                            </div>
 
-                    <div>
-                        <img src="img/logoeletrica.jpg">
-                        <h3>Java</h3>
-                    </div>
+                            <div class="skill jsColorBorder">
+                                <h3>Java</h3>
+                                <img width="20px" src="img/logoeletrica.jpg">                                
+                            </div>
 
-                    <div>
-                        <img src="img/logoeletrica.jpg">
-                        <h3>Payton</h3>
-                    </div>
+                            <div class="skill pyColorBorder">
+                                <h3>Payton</h3>
+                                <img width="20px"src="img/logoeletrica.jpg">                                
+                            </div>
+                    </div> 
                     
                 </div>
             </section>
 
             <section title="Contato">
                 <!-- contato pode ser no rodaé neste caso sera formulario -->
-                <div id="contato">
-                    <P>Preencha o formulario e entrarei em contato</P>
-                    <div>
-                        <form>
-                            <!-- form para marcar que é formulario -->
-                            <label for="nome">Nome</label>
-                            <!-- for faz referencia ao input
-                                 recebe o dado tipo texto -->
-                            <input type="text" name="nome">
+                <!-- aula 6 adicionado class -->
+                <div id="contato" class="marginContainer">
+                    <h2 class="tituloBloco">Contato</h2>
+                    <P class="paragrafo">Preencha o formulario e entrarei em contato</P>
+                    <form class="formularioContato">
+                        <!-- form para marcar que é formulario -->
+                        <!-- <label for="nome">Nome</label> retirado aula 6 para fazer texto encima da caixa -->
+                        <!-- for faz referencia ao input
+                             recebe o dado tipo texto 
+                             aula 6 adicionado placeholder para o texto ficar dentro da caixa-->
+                        <input type="text" name="nome" placeholder="Digite seu nome">
 
-                            <label for="email">Nome</label>                        
-                            <input type="email" name="email">
+                        <!-- <label for="email">Nome</label>                         -->
+                        <input type="email" name="email" placeholder="Digite seu e-mail">
 
-                            <label for="numero">Nome</label>                        
-                            <input type="phone" name="numero">
+                        <!-- <label for="numero">Nome</label>                         -->
+                        <input type="phone" name="numero" placeholder="Digite seu telefone">
 
-                            <button type="submit">Enviar</button>
-                        </form>                        
-                    </div>
+                        <textarea placeholder="Escreva seu assunto"></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form> 
                 </div>
-            </section>
+            </section>            
         </main>
 
         <footer>
@@ -163,13 +173,17 @@
                       utilização do target para abrim em nova aba -->
                 <a href="https://mail.yahoo.com/" target="_blank"><img src="img/yahoo.png"></a>
                 <!-- o mailton vai enviar um email para o email expecificado vai soliciar ao usuario qual app vai quere abrir para enviar -->
+                <!-- COLOCAR UMA DIV PARA COLOCAR TEXTO EM CIMA ENVIE UM EMAIL PARA 
+                     NO LUGAR DO EMAIL SÓ ICONE -->
                 <a href="mailto:tiagotigames@gmail.com">tiagotigames@gmail.com</a>
                 
-                <a href="https://wa.me/96649976?text=sua%20mensagem%20aqui">Enviar mensagem via WhatsApp<img src="img/whatsapp.jpeg"></a>
-                <h1> VERIFICAR SE O WHATS ESTA INCREMENTADO DE MANEIRA CORRETA</h1>
+                <a href="https://wa.me/96649976?text=sua%20mensagem%20aqui"><img src="img/whatsapp.jpeg" title="Envie um whatsapp"></a>
+                <!-- <h1> VERIFICAR SE O WHATS ESTA INCREMENTADO DE MANEIRA CORRETA</h1> -->
             </div>
         </footer>
 
-        
+        <!-- AULA 6 2:36 -->
+        <!-- fonte mobile 14 e 16 -->
+        <!-- aws hospedagem -->
     </body>
 </html>
