@@ -1,0 +1,40 @@
+Cabeçalho
+    Logo
+    Nome do Site
+    Menu de Navegaçao
+    Barra de pesquisa
+
+Corpo
+    Subtitulos
+    Informaçoes
+    Botoes
+    Produto
+    Conteudo
+    Objetivo
+    Artigos
+
+Rodapé
+    Contato
+    Copywrite
+    Certificado de segurança
+    Certificado de verificação
+    Informaçoes do desenvolvedor
+
+
+Cabeçalho
+    Logo (opicional)
+    Menus
+
+Corpo
+    Sobre Voce
+    Skills - HTML - C++ - Photoshop
+    Pórtifólio - 
+    Formulario de contato (opicional)
+
+Rodapé
+    Menu
+    Contatos
+
+Responsividade
+
+Tempo de carregamento
