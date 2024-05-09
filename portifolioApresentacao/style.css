@@ -1,28 +1,39 @@
 :root{
     --white-300: #FFFFFF; 
     
-    --black-300: #212121;
+    --black-300: #1d1919;
+
+    --gray-300: #443e3e;
+
+    --blue-200: #00507F;
+    --blue-300: #2862ea;
 
     --purple-200: #A369FF;
     --purple-300: #8733FF;
-    --purple-500: #5A13B4; 
-    
+    --purple-500: #5A13B4;   
+
+    --yellow-200: #E2C431;
+        
     --html:#e84a27;
     --css: #2862ea;
-    --python: #E2C431;
+    
     --cad: #d82424;
+    --python: linear-gradient(90deg, var(--css) 29%, var(--yellow-200) 93%);
 }
 
+/*toda pagina*/
 body{
     background-color: var(--black-300);
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 
+/*fundo cabeçalho*/
 .backgroudHeaderColor{
-    background-color: var(--purple-300);
+    background-color: var(--blue-300);
 }
 
+/*agrupado o logo e os botões*/
 .containerHeader{
     display: flex;
     align-items: flex-end;
@@ -35,8 +46,9 @@ body{
     height: 120px;
 }
 
+/*botões do cabeçalho*/
 .buttonHeader{
-    background-color: var(--purple-500);
+    background-color: var(--gray-300);
     color: var(--white-300);
     padding: 10px 15px;
     text-decoration: none;
@@ -48,30 +60,48 @@ body{
     transition: background-color 0.5s ease;
 }
 
+/*efeitos dos botões do cabeçalho*/
 .buttonHeader:hover{
-    background-color: var(--purple-200);
+    background-color: var(--blue-300);
     transition: background-color 0.5s ease;
 }
 
-#apresentacao {
+#apresentacao{
     display: flex;
     align-content: stretch;
     justify-content: space-evenly;
     gap: 15px;
 }
 
-#apresentacao > div {
+#apresentacao > div{
     width: 750px;
 }
 
-.tituloBloco {
+.tituloBloco{
     font-size: 2.5rem;
     color: var(--white-300);
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.paragrafo {
+.marginContainerPensa{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.paragrafoPens{
+    font-size: 1.4rem;
+    color: var(--white-300);    
+}
+
+.paragrafoPens{    
+    display: flex;
+    align-items: center;
+}
+
+.paragrafo{
     font-size: 1.4rem;
     color: var(--white-300);
     text-align: justify;
@@ -89,9 +119,13 @@ body{
 }
 
 .skill{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
     padding: 10px 48.7px;
     border: 2px solid;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 .skill img{
@@ -109,23 +143,28 @@ body{
 }
 
 .cssColorBorder{
- border-color: var(--css);
+    border-color: var(--css);
 }
 
-.pythonColorBorder{
-    border-color: var(--python);
-    
+/* foi utilizado skil para as bordas coloquei abixo borda diferente*/
+.pythonColorBorder{    
+   border-image: var(--python);
+   border-image-slice: 1;   
 }
 
 .cadColorBorder{
     border-color: var(--cad);
 }
 
+.wordPresColorBorder{
+    border-color: var(--blue-200);
+}
+
 .formularioContato{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:3px solid var(--purple-500);
+    border:3px solid var(--blue-300);
     border-radius: 25px;
     margin: 0 25px; 
     padding: 35px 0;
@@ -161,7 +200,7 @@ body{
 }
 
 footer{
-    background-color: var(--purple-200);
+    background-color: var(--blue-300);
     display: flex;
     justify-content: flex-end;
     flex-direction: row;    
